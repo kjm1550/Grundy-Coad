@@ -275,6 +275,9 @@
 	#base #photos {
 		display: none;
 	}
+	#article p {
+		font-size: 18px;
+	}
 }
 
 /* ^^^ for the base portion ^^^ */
@@ -306,6 +309,7 @@
 	float: right;
 	padding-right: 30px;
 	color: white;
+	text-align: right;
 }
 #footer .fab {
 	margin-left: 30px;
@@ -314,4 +318,12 @@
 }
 #footer .fab:hover {
 	color: #8e298f;
+}
+@media only screen and (max-width: 650px) {
+	#footer-content {
+		height: 100px;
+	}
+	#footer .fab {
+		margin: 10px 0 10px 30px;
+	}
 }
