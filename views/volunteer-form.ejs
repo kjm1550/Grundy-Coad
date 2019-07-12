@@ -33,15 +33,15 @@
 					</p>
 					<p>All fields of the form are required to be filled out.</p>
 					<div id="contactform">
-						<form action="">
+						<form action="/send-volunteer-form" method='POST'>
 							<label for="firstname">First Name: </label>
-							<input type="text" name="firstname" id="firstname" required />
+							<input type="text" name="firstName" id="firstname" required />
 							<label for="lastname">Last Name: </label>
-							<input type="text" name="lastname" id="lastname" required />
+							<input type="text" name="lastName" id="lastname" required />
 							<label for="email">Email: </label>
 							<input type="email" name="email" id="email" required />
 							<label for="phonenumber">Phone Number: </label>
-							<input type="phonenumber" name="phonenumber" id="phonenumber" required />
+							<input type="phonenumber" name="phoneNumber" id="phonenumber" required />
 							<label for="skills">Skills, talents, or ways you can help: </label>
 							<textarea name="skills" id="skills" placeholder="Write how you can help here..." required></textarea>
 							<input type="submit" value="Submit" id="submit" />

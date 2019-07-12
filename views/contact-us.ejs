@@ -28,19 +28,20 @@
 				<div id="article">
 					<h1>Contact Us</h1>
 					<p>Please fill out the form bellow. We will get back to you as soon as posible.</p>
+					<p>If you are in need or would like to volunteer please check out those forms in our <a href='services'>service page</a>.</p>
 					<p>All fields of the form are required to be filled out.</p>
 					<div id="contactform">
-						<form action="">
+						<form action="/send-contact" method='POST'>
 							<label for="firstname">First Name: </label>
-							<input type="text" name="firstname" id="firstname" required />
+							<input type="text" name="firstName" id="firstname" required maxlength='20'/>
 							<label for="lastname">Last Name: </label>
-							<input type="text" name="lastname" id="lastname" required />
+							<input type="text" name="lastName" id="lastname" required maxlength='20'/>
 							<label for="email">Email: </label>
-							<input type="email" name="email" id="email" required />
+							<input type="email" name="email" id="email" required maxlength='30'/>
 							<label for="phonenumber">Phone Number: </label>
-							<input type="phonenumber" name="phonenumber" id="phonenumber" required />
+							<input type="tel" name="phoneNumber" id="phonenumber" required />
 							<label for="subject">Subject or Message</label>
-							<textarea name="subject" id="subject" placeholder="Write your message here..." required></textarea>
+							<textarea name="subject" id="subject" placeholder="Write your message here..." maxlength='500' required></textarea>
 							<input type="submit" value="Submit" id="submit" />
 						</form>
 					</div>
